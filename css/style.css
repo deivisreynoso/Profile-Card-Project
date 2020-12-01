@@ -1,0 +1,99 @@
+body {
+	margin: 0;
+	padding: 0;
+	color: hsl(0, 0%, 59%);
+	font-family: 'Kumbh Sans', sans-serif;
+	width: 100%;
+}
+span {
+	color: hsl(0, 0%, 59%);
+	font-weight: 400;
+}
+h3 {
+	font-size: 18px;
+	font-family: inherit;
+	color: black;
+	margin: 0;
+	display: block;
+}
+.main-container {
+	background-color: hsl(185, 75%, 39%);
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.bg-top {
+	position: absolute;
+	top: -30rem;
+	left: -15rem;
+}
+
+.bg-bottom {
+	position: absolute;
+	top: 25rem;
+	right: -15rem;
+}
+.card {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	background-color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2rem 20rem hsl(0, 0%, 59%);
+	text-align: center;
+}
+
+.card__image {
+	padding: 80px 0 0;
+	background-image: url(../images/bg-pattern-card.svg);
+	background-size: cover;
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 15%;
+}
+
+.card__image img {
+	border-radius: 50px;
+	border: 5px solid white;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	margin-top: 80px;
+	transform: translate(-50%, -50%);
+}
+.card__name {
+	position: absolute;
+	top: 55%;
+	left: 35%;
+	margin-bottom: 10px;
+	line-height: 1;
+}
+.card__footer {
+	margin-top: 150px;
+	display: flex;
+	justify-content: space-evenly;
+	border-top: 1px solid hsla(0, 0%, 59%, 0.303);
+	text-align: center;
+	padding: 15px 0;
+}
+
+.footer-item {
+	margin-top: 25px;
+	line-height: .5;
+}
+
+.footer-item p {
+	font-size: 14px;
+}
+
+.attribution {
+	position: absolute;
+	bottom: 10px;
+	left: 35%;
+}
