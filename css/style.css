@@ -1,9 +1,11 @@
-body {
+body,
+a {
 	margin: 0;
 	padding: 0;
-	color: hsl(0, 0%, 59%);
+	color: hsl(0, 1%, 35%);
 	font-family: 'Kumbh Sans', sans-serif;
-	width: 100%;
+	width: 100vw;
+	text-decoration: none;
 }
 span {
 	color: hsl(0, 0%, 59%);
@@ -19,6 +21,7 @@ h3 {
 .main-container {
 	background-color: hsl(185, 75%, 39%);
 	position: relative;
+	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
 }
@@ -35,8 +38,8 @@ h3 {
 	right: -15rem;
 }
 .card {
-	width: 400px;
-	height: 400px;
+	width: 25rem;
+	height: 25rem;
 	position: absolute;
 	background-color: white;
 	top: 50%;
@@ -46,6 +49,7 @@ h3 {
 	overflow: hidden;
 	box-shadow: 0 2rem 20rem hsl(0, 0%, 59%);
 	text-align: center;
+	backface-visibility: hidden;
 }
 
 .card__image {
@@ -94,6 +98,18 @@ h3 {
 
 .attribution {
 	position: absolute;
-	bottom: 10px;
-	left: 35%;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+	line-height: 2;
+}
+
+@media (max-width: 900px) {
+	.bg-bottom {
+		display: none;
+	}
+	.bg-top {
+		display: none;
+	}
 }
